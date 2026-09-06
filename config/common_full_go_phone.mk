@@ -1,5 +1,5 @@
-# Set Lineage specific identifier for Android Go enabled products
+# Set SkyzenOS specific identifier for Android Go enabled products
 PRODUCT_TYPE := go
 
-# Inherit full common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit full common SkyzenOS stuff
+$(call inherit-product, vendor/skyzen/config/common_full_phone.mk)
