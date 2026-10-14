@@ -22,5 +22,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.skyzen.version=$(SKYZEN_VERSION) \
     ro.skyzen.maintainer=$(SKYZEN_MAINTAINER) \
     ro.skyzen.display.version=$(SKYZEN_DISPLAY_VERSION) \
+    ro.skyzen.device=$(SKYZEN_BUILD) \
     ro.skyzen.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.skyzen.releasetype=$(SKYZEN_BUILDTYPE)
