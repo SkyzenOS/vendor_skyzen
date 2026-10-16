@@ -6,8 +6,7 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
-    AvatarPicker \
-    Backgrounds
+    AvatarPicker
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
@@ -49,4 +48,4 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    ThemePicker \
+    ThemePicker
