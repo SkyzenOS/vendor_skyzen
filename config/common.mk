@@ -114,9 +114,6 @@ PRODUCT_PACKAGES += \
     SkyzenSetupWizard
 endif
 
-PRODUCT_PACKAGES += \
-    Updater
-
 PRODUCT_COPY_FILES += \
     vendor/skyzen/prebuilt/common/etc/init/init.skyzen-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.skyzen-updater.rc
 
