@@ -14,16 +14,16 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# SkyzenOS OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+SKYZEN_TARGET_PACKAGE := $(PRODUCT_OUT)/$(SKYZEN_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
-$(LINEAGE_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
-	$(hide) $(SHA256) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).sha256sum
-	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+$(SKYZEN_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(SKYZEN_TARGET_PACKAGE)
+	$(hide) $(SHA256) $(SKYZEN_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SKYZEN_TARGET_PACKAGE).sha256sum
+	@echo "Package Complete: $(SKYZEN_TARGET_PACKAGE)" >&2
 
-.PHONY: bacon
-bacon: $(LINEAGE_TARGET_PACKAGE) $(DEFAULT_GOAL)
+.PHONY: skyzen
+skyzen: $(SKYZEN_TARGET_PACKAGE) $(DEFAULT_GOAL)
