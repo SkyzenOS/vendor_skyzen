@@ -3,10 +3,6 @@ $(call inherit-product, vendor/skyzen/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
-# Apps
-PRODUCT_PACKAGES += \
-    Etar
-
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
     Aperture
